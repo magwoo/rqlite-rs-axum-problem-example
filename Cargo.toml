@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-axum = "0.8.1"
+axum = { version = "0.8.1", features = ["macros"]}
 rqlite-rs = "0.6.0"
+# rqlite-rs = { git = "https://github.com/tomvoet/rqlite-rs.git", branch = "fix/fallback-strategy-multi-threading-trait-bounds" }
 tokio = { version = "1.43.0", features = ["rt-multi-thread", "macros"] }
